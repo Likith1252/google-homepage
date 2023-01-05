@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+}
+
+a{
+    margin:5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between  ;
+}
+.container{
+    width: 50%;
+    height:50px;
+    background: #3c5077;
+    align-items: center;
+    justify-content: center;
+}
+.Icons{
+    padding: 10px 60px;
+    background: #fff;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position:absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(100%,100%);
+    text-align: right;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 100%;
+    transform: translate(100%,100%);
+
+}
+.popup img{
+    width: 50px;
+    margin-top:auto;
+    border-radius: 50%;
+
+}
+
+ul > a, ul > img {
+    padding: 0 8px1;
+}
+
+.headrer-img:hover{
+    box-shadow: 0 0 10px 0 rgb(97, 32, 32);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/productsa...) format('woff2');
+}
+
+h1 {
+    font-family: product sans;
+    font-size: 5.5em
+}
+
+.my-input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+
+.my-input-container:hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+
+.my-input-container > input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.my-button-container{
+    padding-top: 53px;
+}
+
+button{
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    border:none;
+    height:36px;
+    padding: 0 20px;
+    margin: 0 4px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+footer {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#footer-left{
+    display: flex;
+    justify-self: start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+#footer-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+
+@media (max-width: 630px) {
+
+    #footer-nav{
+        flex-direction: column;
+    }
+
+    #footer-left{
+        justify-content: center;
+    }
+
+    #footer-right{
+        justify-content: center;
+    }
+
+    .my-input-container{
+        width: 95vw;
+    }
+
+}
+
+@media(max-height: 522px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    section {
+        margin-bottom: 20px;
+    }
+
+    footer{
+        position: relative;
+    }
+
+}
+
+@media (max-height: 570px) and (max-width: 630px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        margin-bottom: 13px;
+    }
+
+    footer {
+        position: relative;
+    }
+}

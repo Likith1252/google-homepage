@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="./pics/google.PNG">
+    <link rel="stylesheet" href="google.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="header-nav">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </ul>
+            <ul class="header-nav">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <div class="container">
+                    <button type="apps" class="Icons" onclick="openPopup()">My App</button>
+                    <div class="popup" id="popup">
+                        <img src="/gmail.png" alt="gmail">
+                        <img src="/google-drive.png" alt="drive">
+                        <img src="/image_.png" alt="youtube">
+                        <img src="/google-calendar.png" alt="calender">
+                        <img src="/google-earth.png" alt="earth">
+                        <img src="/google-maps.png" alt="maps">
+                        <img src="/google-photos.png" alt="google-photos">
+                        <img src="/google-play.png" alt="google-play">
+                        <img src="/docs.png" alt="docs">
+                        <img src="/google (1).png" alt="google">
+                        <img src="/google-forms.png" alt="google-forms">
+                        <img src="/meet.png" alt="meet">
+                        <img src="/sheets.png" alt="sheets">
+                    </div>
+                </div>
+                <script>
+                    let popup = document.getElementById("popup");
+                    function openPopup(){
+                        console.log(popup.classList)
+                        popup.classList.add("open-popup")
+                        console.log(popup.classList)
+                        console.log("debug line")
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup")
+                    }
+                </script>
+                <img class="header-img" src="./pics/profile-pic.jpg" alt="profilr-pic">
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>
+            <span style="color: blue;">G</span><span style="color: red;">o</span><span style="color: #F4B400;">o</span><span style="color: blue;">g</span><span style="color: green;">l</span><span style="color: red;">e</span>
+        </h1>
+        <div class="my-input-container">
+            <img src="./pics/glass-2.png" alt="mag-glass">
+            <input type="text">
+            <img src="./pics/mic-2.png" alt="mic">
+        </div>
+        <div class=""my-button-container>
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </section>
+
+    <footer>
+        <nav id="footer-nav">
+            <ul id="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </ul>
+            <ul id="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
